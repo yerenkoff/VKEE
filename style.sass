@@ -1,0 +1,287 @@
+*
+    margin: 0
+    padding: 0
+h1
+    font-size: 50px
+h2
+    font-size: 40px
+h3, h4
+    font-size: 30px
+h6
+    font-size: 30px
+html::-webkit-scrollbar
+    display: none
+body
+    background: url(img/bgE.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-attachment: scroll
+    >h2
+        text-align: center
+        color: #333
+        // text-shadow: 0 0 10px rgba(0,0,0,0.3)
+        font-family: 'Lato', sans-serif
+        margin: 70px 0
+
+.banner
+    height: 600px
+    position: relative
+    overflow: hidden
+    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+
+    video
+        position: absolute
+        width: 100%
+        // height: 100%
+        filter: brightness(0.8)
+        top: 0
+        left: 0
+        z-index: -1
+    header
+        background: rgba(255,255,255,0.95)
+        // background: rgba(0,0,0,0.2)
+        font-size: 0
+        // text-align: center
+        box-shadow: 0 0 10px rgba(0,0,0,0.1)
+        img
+            height: 40px
+            vertical-align: bottom
+            padding: 20px 40px
+            filter: invert(1)
+        nav
+            display: inline-block
+            a
+                line-height: 40px
+                font-family: 'Lato', sans-serif
+                // color: #fff
+                color: #222
+                // text-shadow: 0 0 10px rgba(0,0,0,0.5)
+                transition: .3s
+                font-size: 16px
+                display: inline-block
+                padding: 20px 10px
+                text-decoration: none
+                border-bottom: 2px solid transparent
+                &:hover
+                    border-bottom: 2px solid #222
+                    padding-bottom: 10px
+                    // border-bottom: 2px solid #fff
+    .bannerInfo
+        position: absolute
+        bottom: 100px
+        // background: rgba(255,255,255,0.8)
+        padding: 20px 40px
+        // background: #ccc
+        h3
+            font-family: 'Lato', sans-serif
+            color: #fff
+            text-shadow: 0 0 15px rgba(0,0,0,0.8)
+        h1
+            font-family: 'Lato', sans-serif
+            margin-bottom: 40px
+            color: #fff
+            text-shadow: 0 0 15px rgba(0,0,0,0.8)
+        a
+            border: 1px solid #fff
+            font-family: 'Lato', sans-serif
+            color: #fff
+            text-shadow: 0 0 15px rgba(0,0,0,0.8)
+            // background: rgba(0,0,0,0.3)
+            text-decoration: none
+            padding: 10px 30px
+            font-size: 20px
+            display: inline-block
+            transition: 0.3s
+            &:hover
+                // background: rgba(255,255,255,0.3)
+                background: rgba(0,0,0,0.3)
+.carousel
+    // height: 500px
+    // overflow: hidden
+    position: relative
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)
+    .carouselInfo
+        position: absolute
+        // background: pink
+        white-space: nowrap
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        // padding: 0 160px
+        box-sizing: border-box
+        overflow-x: scroll
+        &::-webkit-scrollbar
+            display: none
+        section
+            background: red
+            // width: 10%
+            display: inline-block
+            margin: 300px 160px 0
+            width: calc(100% - 320px)
+            white-space: normal
+            transform: translateY(-50%)
+            padding: 20px
+            background: rgba(0,0,0,0.2)
+            border-radius: 5px
+            box-sizing: border-box
+            h2, h4
+                font-family: 'Lato', sans-serif
+                color: #fff
+            h2
+                margin-bottom: 20px
+                opacity: 0.9
+            h4
+                font-weight: 400
+                opacity: 0.9
+                text-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+    .slider
+        height: 600px
+        font-size: 0
+        white-space: nowrap
+        overflow-x: scroll
+        &::-webkit-scrollbar
+            display: none
+        img
+            height: 100%
+            width: 100%
+            object-fit: cover
+    .carouselButtons
+        // background: #cccccc
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        // padding: 0 40px
+        box-sizing: border-box
+        a
+            text-decoration: none
+            color: #fff
+            // background: rgba(0,0,0,0.5)
+            line-height: 600px
+            padding: 0 40px
+            height: 100%
+            // border-radius: 20px
+            width: 40px
+            display: inline-block
+            // margin-top: 280px
+            text-align: center
+            font-size: 60px
+            text-shadow: 0 0 10px #000
+            transition: 0.3s
+            position: relative
+            z-index: 1
+            &:nth-child(2)
+                float: right
+            //     &::before
+            //         background: linear-gradient(to right, transparent, rgba(0,0,0,0.3))
+            // &::before
+            //     content: ""
+            //     position: absolute
+            //     width: 100%
+            //     height: 100%
+            //     background: linear-gradient(to left, transparent, rgba(0,0,0,0.3))
+            //     // background: pink
+            //     top: 0
+            //     left: 0
+            //     opacity: 0
+            //     transition: 0.3s
+            //     z-index: -1
+            // &:hover::before
+            //     opacity: 1
+            &:hover
+                background: rgba(0,0,0,0.1)
+main
+    padding: 5px
+    overflow: hidden
+    img
+        display: block
+        float: left
+        height: 500px
+        object-fit: cover
+        border: 5px solid transparent
+        box-sizing: border-box
+        // border-radius: 20px
+        &:nth-child(4n+1)
+            width: 70%
+        &:nth-child(4n+4)
+            width: 70%
+        &:nth-child(4n+2)
+            width: 30%
+        &:nth-child(4n+3)
+            width: 30%
+main + a
+    border: 2px solid #aaa
+    font-family: 'Lato', sans-serif
+    font-size: 30px
+    text-align: center
+    display: block
+    width: 200px
+    padding: 10px
+    margin: 30px auto 100px
+    text-decoration: none
+    color: #222
+    clear: both
+    transition: 0.3s
+    &:hover
+        border: 2px solid #222
+        background: rgba(255,255,255,0.9)
+footer
+    background: rgba(0,0,0,0.8)
+    overflow: hidden
+    text-align: center
+    >ul
+        // background: #ccc
+        margin: 50px auto
+        text-align: center
+        a
+            text-decoration: none
+            display: inline-block
+            margin: 0 5px
+            transition: 0.3s
+            color: #fff
+            font-family: 'Lato', sans-serif
+            font-size: 16px
+            line-height: 30px
+            opacity: 0.9
+            // background: red
+            padding: 5px 10px
+            &:hover
+                opacity: 0.4
+    >div
+        // background: pink
+        display: inline-block
+        width: 200px
+        vertical-align: top
+        margin: 0 20px
+        
+        ul
+            a
+                display: block
+                text-align: left
+                font-weight: 400
+                line-height: 40px
+                color: #fff
+                opacity: 0.9
+                text-decoration: none
+                font-family: 'Lato', sans-serif
+                font-size: 16px
+                transition: 0.3s
+                &:hover
+                    opacity: 0.4
+    h5
+        color: #fff
+        font-family: 'Lato', sans-serif
+        font-size: 20px
+        text-align: left
+        margin-bottom: 20px
+        border-bottom: 1px solid rgba(255,255,255,0.1)
+        padding-bottom: 10px
+        font-weight: 400
+        opacity: 0.3
+    #companyYear
+        width: 200px
+        margin: 100px auto
+        text-align: center
